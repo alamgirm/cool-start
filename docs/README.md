@@ -1,38 +1,143 @@
 ---
-home: true
-actionText: Get Started →
-actionLink: /custom-components/
-features:
-- title: Admonitions and Tables
-  details: Uses google material icons and sortable tables
-- title: Charts and Math
-  details: Leverage chartjs and katex 
-- title: Diagramming tools
-  details: Integrated with mermaid and plantuml
-footer: MIT Licensed | Copyright © 2019-present David Li
+title: Read Me
 ---
 
+# Read me
 
-## Disclaimer
-
-This repo has installed `vuepress-theme-cool@1.3.1`
-
-[![Build Status](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter.svg?branch=master)](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter)
-## ReadMe 
-
-This is an example of how to use the `vuepress-theme-cool` vuepress theme, look into docs for example files.
-
-## Installation and Running
-
-To install:
-
-`npm install`
-
-To run:
-
-`npm run docs:dev`
+[[toc]]
 
 
-## Customization
+## Examples
 
-Most of the customization is done in `config.js`, automatic navbar and sidebar navigation is available in `config-other.js`
+The icons for the admonitions use Google Material Icons.
+
+Available admonitions: note, abstract, info, tip, success, question, warning, failure, danger, bug, example, quote.
+
+The icons are styled as in `style.styl` (will be different in VuePress 1.0), and material icons are loaded in `config.js` as a stylesheet.
+
+To use admonitions, see examples below:
+
+```
+!!! <admonition type> <Admonition title>
+Admonition content
+!!!
+```
+
+```
+!!! note Testing Notes
+Good Note
+!!!
+```
+
+!!! note Testing Notes
+Good Note
+!!!
+
+```
+!!! abstract Course Outline
+This is an abstract
+!!!
+```
+
+!!! abstract Course Outline
+This is an abstract
+!!!
+
+```
+!!! info Information
+Info icon
+!!!
+```
+
+!!! info Information
+Info icon
+!!!
+
+```
+!!! tip Cool
+This is a tip.
+!!!
+```
+
+!!! tip Cool
+This is a tip.
+!!!
+
+```
+!!! success SUCCESS Thing
+This is a success box
+!!!
+```
+
+!!! success SUCCESS Thing
+This is a success box
+!!!
+
+!!! question Cool Question
+I have questions
+!!!
+
+```
+!!! warning A good warning
+Example of a warning
+!!!
+```
+
+!!! warning A good warning
+Example of a warning
+!!!
+
+```
+!!! failure I failed
+Fail in life.
+!!!
+```
+
+!!! failure I failed
+Fail in life.
+!!!
+
+```
+!!! danger More danger
+DANGEROUS
+!!!
+```
+
+!!! danger More danger
+DANGEROUS
+!!!
+
+```
+!!! bug Software Bug
+I love bugs
+!!!
+```
+!!! bug Software Bug
+I love bugs
+!!!
+
+```
+!!! example Example 1.1
+$$x^2=6.5*5$$
+!!!
+```
+!!! example Example 1.1
+$$x^2=6.5*5$$
+!!!
+
+```
+!!! quote Qutation
+Quote 1.1
+!!!
+```
+!!! quote Qutation
+Quote 1.1
+!!!
+
+### Table <Badge text="beta" type="warn"/> <Badge text="0.10.1+"/>
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
